@@ -40,15 +40,15 @@
     </nav>
   </header>
 
-  <main>
+  <main class="d-flex flex-sm-wrap flex-lg-nowrap justify-content-center">
 
-    <div class="container">
+    <div class="container col-6">
      <div class="row mt-5">
 
-      <div class="col-sm-6 col-md-3"><h2>Catalogo libri</h2></div>
-      <div class="col-sm-6 col-md-3 text-end"><button type="button" class="btn btn-primary">Aggiungi libro</button></div>    
+      <div class="col-sm-6"><h2>Catalogo libri</h2></div>
+      <div class="col-sm-6 text-end"><button type="button" class="btn btn-primary">Aggiungi libro</button></div>    
 
-      <div class="col-sm-12 col-md-6 mt-3">        
+      <div class="col-md-12 mt-3">        
         <table class="table table-striped">
           <thead class="table-default">
             <tr>
@@ -141,10 +141,10 @@
               </td>
             </tr>
             <tr>
-              <td>Le cronache di Narnia: il leone, la strega, l'armadio</td>
+              <td class="col-6">Le cronache di Narnia: il leone, la strega, l'armadio</td>
               <td class="d-sm-none d-md-table-cell"> 25/07/2023 </td>
-              <td><span class="badge text-bg-warning">In prestito</span></td>
-              <td>
+              <td class="col-2"><span class="badge text-bg-warning">In prestito</span></td>
+              <td class="col-2">
                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>              
               </td>
@@ -169,7 +169,12 @@
             </tr>            
           </tbody>          
         </table>
-      </div> 
+      </div>  
+
+      </div>     
+     </div>
+     
+     <div class="container mt-5">
       <div class="col-sm-12 col-md-6">
         <div class="card">
           <div class="card-header">
@@ -177,15 +182,14 @@
           </div>
           <div>
             <ul class="list-group p-3">
-              <li class="list-group-item"><input class="form-check-input mt-1" type="checkbox" value="" aria-label="Checkbox for following text input"><span class="ms-1">Chiamare segreteria</span></li>
-              <li class="list-group-item"><input class="form-check-input mt-1" type="checkbox" value="" aria-label="Checkbox for following text input"><span class="ms-1">Mandare avvisi prestiti scaduti</span></li>
-              <li class="list-group-item"><input class="form-check-input mt-1" type="checkbox" value="" aria-label="Checkbox for following text input"><span class="ms-1">Ordinare nuovi libri</span></li>              
+              <li class="list-group-item"><input class="form-check-input mt-1" type="checkbox" value="" aria-label="Checkbox for following text input"><span class="ms-2">Chiamare segreteria</span></li>
+              <li class="list-group-item"><input class="form-check-input mt-1" type="checkbox" value="" aria-label="Checkbox for following text input"><span class="ms-2">Mandare avvisi prestiti scaduti</span></li>
+              <li class="list-group-item"><input class="form-check-input mt-1" type="checkbox" value="" aria-label="Checkbox for following text input"><span class="ms-2">Ordinare nuovi libri</span></li>              
             </ul>
           </div>
         </div>
-      </div>     
-     </div>      
-    </div>
+     </div>
+    
     
   </main>
   <footer></footer>
