@@ -31,7 +31,7 @@
               <a class="nav-link" href="#">Help</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <form class="d-none" role="search">
             <input class="form-control me-2" data-bs-theme="light" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-light" type="submit">Search</button>
           </form>          
@@ -47,48 +47,63 @@
 
         <div class="col-6 mt-3">
           <label class="form-label">Nome Autore</label>
-          <input class="form-control mt-3" type="text" placeholder="Inserire il nome dell'autore" aria-label="default input example">
+          <input class="form-control mt-3" type="text" placeholder="Inserire il nome dell'autore">
         </div>        
         <div class="col-6 mt-3">
             <label class="form-label">Cognome autore</label>
-            <input class="form-control mt-3" type="text" placeholder="Inserire il cognome dell'autore" aria-label="default input example">
+            <input class="form-control mt-3" type="text" placeholder="Inserire il cognome dell'autore">
           </div>  
         </div>
       </div>
       <div class="container mt-3">
         <div class="col-12">
           <label class="form-label">Titolo</label>
-            <input class="form-control mt-3" type="text" placeholder="Inserisci il titolo del libro" aria-label="default input example">
+            <input class="form-control mt-3" type="text" placeholder="Inserisci il titolo del libro">
             <div class="form-text">
               Titolo versione italiana
             </div>
         </div>
       </div>
-      <div class="container mt-3">
-        <div class="row">
 
+      <div class="container my-3">
+        <div class="row">
           <div class="col-12 col-md-4 mt-sm-2">
             <label class="form-label">Genere</label>
-            <select class="form-select mt-3" aria-label="Default select example">
+            <select class="form-select my-3" aria-label="Default select example">
               <option selected>Scegli il tuo genere</option>
               <option value="1">Azione</option>
               <option value="2">Horror</option>
               <option value="3">Giallo</option>
             </select>
           </div>
-
           <div class="col-12 col-md-4 mt-sm-2">
             <label class="form-label">Anno di pubblicazione</label>
-              <input class="form-control mt-3" type="text" placeholder="Inserisci l'anno" aria-label="default input example">
+              <input class="form-control my-3" type="text" placeholder="Inserisci l'anno">
           </div>
-
           <div class="col-12 col-md-4 mt-sm-2">
             <label class="form-label">ISBN#</label>
-              <input class="form-control mt-3" type="text" placeholder="Inserisci il codice ISBN#" aria-label="default input example">
+              <input class="form-control my-3" type="text" placeholder="Inserisci il codice ISBN#">
           </div>
-
         </div>        
-      </div>   
+      </div>
+      
+      <div class="container">
+        <hr>
+      </div>
+
+      <div class="container">
+        <div class="col-12">
+          <label class="form-label">Note</label>
+          <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" style="height: 100px;"></textarea>
+        </div>
+        <div class="form-check my-2">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Disponibile anche in digitale
+          </label>
+        </div>
+        <button type="button" class="btn btn-primary my-2">Aggiungi libro</button>
+      </div>
     
   
   </main>
